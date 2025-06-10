@@ -1,1 +1,24 @@
 
+/* index.css — Style pour la page d'accueil du site Ultralight Fishing */
+
+/* Reset de base */
+
+{ margin: 0; padding: 0; box-sizing: border-box; }
+
+
+body { font-family: Arial, sans-serif; background-color: #f9f9f9; color: #333; display: flex; justify-content: center; align-items: center; height: 100vh; }
+
+.container { text-align: center; display: flex; flex-direction: column; gap: 2rem; }
+
+h1 { font-size: 2rem; color: #222; margin-bottom: 1rem; }
+
+.categories { display: flex; gap: 2rem; justify-content: center; }
+
+.category { display: flex; flex-direction: column; align-items: center; text-decoration: none; background-color: #ffffff; border: 1px solid #ddd; border-radius: 12px; padding: 1.5rem; width: 120px; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+
+.category:hover { transform: translateY(-5px); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); }
+
+.category img { width: 64px; height: 64px; margin-bottom: 0.5rem; }
+
+.category span { font-size: 1rem; color: #444; }
+
