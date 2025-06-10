@@ -1,4 +1,3 @@
-
 /* index.css — Style pour la page d'accueil du site Ultralight Fishing */
 
 /* Reset de base */
@@ -6,13 +5,13 @@
 { margin: 0; padding: 0; box-sizing: border-box; }
 
 
-body { font-family: Arial, sans-serif; background-color: #f9f9f9; color: #333; display: flex; justify-content: center; align-items: center; height: 100vh; }
+body { font-family: Arial, sans-serif; background-color: #f9f9f9; color: #333; display: flex; justify-content: center; align-items: center; height: 100vh; padding: 1rem; }
 
-.container { text-align: center; display: flex; flex-direction: column; gap: 2rem; }
+.container { text-align: center; display: flex; flex-direction: column; gap: 2rem; max-width: 100%; }
 
 h1 { font-size: 2rem; color: #222; margin-bottom: 1rem; }
 
-.categories { display: flex; gap: 2rem; justify-content: center; }
+.categories { display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; }
 
 .category { display: flex; flex-direction: column; align-items: center; text-decoration: none; background-color: #ffffff; border: 1px solid #ddd; border-radius: 12px; padding: 1.5rem; width: 120px; transition: transform 0.2s ease, box-shadow 0.2s ease; }
 
@@ -21,4 +20,14 @@ h1 { font-size: 2rem; color: #222; margin-bottom: 1rem; }
 .category img { width: 64px; height: 64px; margin-bottom: 0.5rem; }
 
 .category span { font-size: 1rem; color: #444; }
+
+/* Responsive */ @media (max-width: 600px) { .categories { flex-direction: column; align-items: center; }
+
+.category { width: 100%; max-width: 300px; }
+
+h1 { font-size: 1.5rem; }
+
+.category img { width: 48px; height: 48px; }
+
+.category span { font-size: 0.95rem; } }
 
